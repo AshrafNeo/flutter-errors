@@ -38,6 +38,8 @@ class FlutterWidgetBindingObserverImpl extends FlutterWidgetBindingObserver {
         return PageState.onDestroy;
       case null:
         return PageState.attached;
+      default:
+        return PageState.attached;
     }
   }
 }
